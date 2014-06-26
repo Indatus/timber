@@ -3,6 +3,13 @@ Timber
 
 Timber provides a lean wrapper around the default logging utility built into Android.
 
+A `TAG` is auto-generated for you and your log statement is prefaced by `[method:line]`.  This was inspired by [DebugLog](https://github.com/MustafaFerhan/DebugLog).
+
+Usage
+-----
+
+    Timber.v("Something to log.");
+
 License
 -------
 
