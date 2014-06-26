@@ -3,11 +3,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:gravity="center">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/verbose"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/timber_verbose"/>
+
+    <Button
+        android:id="@+id/debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timber_debug"/>
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timber_info"/>
+
+    <Button
+        android:id="@+id/warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timber_warn"/>
+
+    <Button
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timber_error"/>
+
+    <Button
+        android:id="@+id/wtf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timber_wtf"/>
 
 </LinearLayout>

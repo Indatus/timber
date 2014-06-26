@@ -49,9 +49,9 @@ public class Timber {
 
     private static void configureClassInfo() {
         final StackTraceElement[] elements = new Throwable().getStackTrace();
-        sClass = elements[1].getClassName();
-        sMethod = elements[1].getMethodName();
-        sLine = elements[1].getLineNumber();
+        sClass = elements[2].getClassName();
+        sMethod = elements[2].getMethodName();
+        sLine = elements[2].getLineNumber();
     }
 
     private static <T> String generateString(T... args) {

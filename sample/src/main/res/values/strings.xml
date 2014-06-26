@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Timber</string>
+    <string name="timber_verbose">Test Verbose</string>
+    <string name="timber_debug">Test Debug</string>
+    <string name="timber_info">Test Info</string>
+    <string name="timber_warn">Test Warn</string>
+    <string name="timber_error">Test Error</string>
+    <string name="timber_wtf">Test WTF</string>
 </resources>
