@@ -3,6 +3,7 @@ package com.indatus.android.timber.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.indatus.android.timber.R;
@@ -30,19 +31,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 Timber.v("Logging verbose");
                 break;
             case R.id.debug:
-                Timber.v("Logging debug");
+                Timber.d("Logging debug");
                 break;
             case R.id.info:
-                Timber.v("Logging info");
+                Timber.i("Logging info");
                 break;
             case R.id.warn:
-                Timber.v("Logging warn");
+                Timber.w("Logging warn");
                 break;
             case R.id.error:
-                Timber.v("Logging error");
+                Timber.e("Logging error");
                 break;
             case R.id.wtf:
-                Timber.v("Logging wtf");
+                Timber.wtf("Logging wtf");
                 break;
             default:
                 break;
