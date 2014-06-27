@@ -35,6 +35,12 @@ is preferable to:
 
 The reasoning behind this has to do with the way an object's `toString()` method works.  If `response` in this case were a `StringBuilder`, which it often would be when collecting a server response, it would automatically call `response.toString()` so a single concatenated String can be passed in as the parameter.  So why is this a problem?  Let's suppose for a minute that `response` is fairly large in size.  Calling `toString()` (either explicitly or letting it be called implicitly) will create unnecessary overhead for a log statement that isn't even going to get executed in a release build.  Passing `response` to Timber as an argument (the first example) delays the `toString()` call until it's needed, thereby reducing wasted performance in your production app, but still providing you with important information when debugging.
 
+### Setting `IS_DEBUGGING`
+
+Because of inconsistencies with `BuildConfig.DEBUG`, you can set `Timber.IS_DEUBBING` to `true` or `false` to specify whether or not your `VERBOSE` and `DEBUG` log statements will be printed.
+
+`Timber.i(...)`, `Timber.w(...)`, `Timber.e(...)`, and `Timber.wtf(...)` will always be printed.
+
 License
 -------
 

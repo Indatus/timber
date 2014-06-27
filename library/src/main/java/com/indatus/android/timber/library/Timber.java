@@ -9,7 +9,7 @@ public class Timber {
     private static String sMethod;
     private static int sLine;
 
-    public static final boolean SHOULD_DEBUG = true;
+    public static final boolean IS_DEBUGGING = true;
 
     //   ____                _                   _
     //  / ___|___  _ __  ___| |_ _ __ _   _  ___| |_ ___  _ __
@@ -37,7 +37,7 @@ public class Timber {
      * @param <T>
      */
     public static <T> void v(T... args) {
-        if (SHOULD_DEBUG) {
+        if (IS_DEBUGGING) {
             configureClassInfo();
             Log.v(sClass, generateString(args));
         }
@@ -51,7 +51,7 @@ public class Timber {
      * @param <T>
      */
     public static <T> void d(T... args) {
-        if (SHOULD_DEBUG) {
+        if (IS_DEBUGGING) {
             configureClassInfo();
             Log.d(sClass, generateString(args));
         }
