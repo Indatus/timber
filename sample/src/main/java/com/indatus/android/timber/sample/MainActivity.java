@@ -3,7 +3,6 @@ package com.indatus.android.timber.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.indatus.android.timber.R;
