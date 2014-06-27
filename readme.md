@@ -8,7 +8,28 @@ A `TAG` is auto-generated for you and your log statement is prefaced by `[method
 Usage
 -----
 
-    Timber.v("Something to log.");
+    Timber.v("Logging a verbose message...");
+
+Will output something like this in logcat:
+
+    V/com.indatus.android.timber.sample.MainActivity﹕ [onClick:30] Logginga verbose message...
+
+Each of the verbosity levels from the default Log apply here:
+
+- `Timber.v(...)`
+- `Timber.d(...)`
+- `Timber.i(...)`
+- `Timber.w(...)`
+- `Timber.e(...)`
+- `Timber.wtf(...)`
+
+For improved performance, Timber was designed to use varargs rather than a single string.  Passing in multiple parameters will be more efficient if you separate them with a comma and let Timber handle the concatenation for you.
+
+    Timber.d("Server response: ", response);
+
+is preferable to:
+
+    Timber.d("Server response: " + response);
 
 License
 -------
