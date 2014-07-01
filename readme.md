@@ -12,7 +12,7 @@ Usage
 
 Will output something like this in logcat:
 
-    V/com.indatus.android.timber.sample.MainActivity﹕ [onClick:30] Logginga verbose message...
+    V/com.indatus.android.timber.sample.MainActivity﹕ [onClick:30] Logging a verbose message...
 
 Each of the verbosity levels from the default Log apply here:
 
